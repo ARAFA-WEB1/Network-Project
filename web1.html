@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>𝐹𝒶𝓇𝒶`𝟥 – Modern Local Clothing Brand</title>
+    <link rel="stylesheet" href="web1.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="web1.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>𝐹𝒶𝓇𝒶`𝟥</h1>
+        <nav class="desktop-nav">
+            <a href="#home" id="homeLink">Home</a>
+            <a href="#collections">Collections</a>
+            <a href="#products">New Arrivals</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <div id="userMenuContainer"></div>
+            <button id="darkToggle">Dark Mode</button>
+            <div id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sidebar Navigation -->
+    <div id="sidebar">
+        <a href="#home" id="mobileHomeLink">Home</a>
+        <a href="#collections">Collections</a>
+        <a href="#products">New Arrivals</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <div id="mobileAuthLinks" style="margin-top: 1rem;"></div>
+        <button id="darkToggleMobile" style="margin-top: 20px;">Dark Mode</button>
+    </div>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Hero Section with Parallax Floating Image -->
+        <section id="home" class="hero" aria-label="Hero section promoting 𝐹𝒶𝓇𝒶`𝟥 brand">
+            <div class="hero-parallax-wrapper">
+                <!-- Floating background elements -->
+                <div class="floating-bg-circle circle-1"></div>
+                <div class="floating-bg-circle circle-2"></div>
+                <div class="floating-bg-circle circle-3"></div>
+
+                <div class="hero-content-container clearfix">
+                    <!-- Hero text with floating animation -->
+                    <div class="hero-text-section float-left">
+                        <div class="text-float-animation">
+                            <h2 class="floating-heading">𝐹𝒶𝓇𝒶`𝟥</h2>
+                            <p class="floating-subtitle">Modern Egyptian streetwear. Minimalist design meets bold
+                                attitude.</p>
+
+                            <!-- Floating badges -->
+                            <div class="floating-tag-badge">
+                                <span>🔥</span> Trending Now
+                            </div>
+                            <div class="floating-tag-badge">
+                                <span>⭐</span> Premium Quality
+                            </div>
+
+                            <button id="shopBtn" class="btn-primary floating-btn">
+                                <span>👕</span> Shop Collections
+                            </button>
+                        </div>
+
+                        <!-- Floating stats -->
+                        <div class="floating-stats">
+                            <div class="stat-float">
+                                <div class="stat-number" data-count="2000">0</div>
+                                <div class="stat-label">Happy Customers</div>
+                            </div>
+                            <div class="stat-float">
+                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-label">Unique Designs</div>
+                            </div>
+                            <div class="stat-float">
+                                <div class="stat-number" data-count="99">0</div>
+                                <div class="stat-label">Quality Rating</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floating hero image with parallax -->
+                    <div class="hero-image-float-container float-right">
+                        <div class="floating-image-wrapper" id="parallaxImage">
+                            <img src="abc.jpeg" alt="Models wearing 𝐹𝒶𝓇𝒶`𝟥 brand clothing"
+                                class="floating-hero-image" width="500" height="350" />
+
+                            <!-- Floating overlay with gradient -->
+                            <div class="floating-image-overlay"></div>
+
+                            <!-- Interactive floating elements on image -->
+                            <div class="floating-dot interactive-dot dot-1" data-tooltip="Premium Cotton"></div>
+                            <div class="floating-dot interactive-dot dot-2" data-tooltip="Egyptian Design"></div>
+                            <div class="floating-dot interactive-dot dot-3" data-tooltip="Sustainable"></div>
+
+                            <!-- Floating price tag -->
+                            <div class="floating-price-tag">
+                                <span class="price-old">$120</span>
+                                <span class="price-new">$89</span>
+                                <div class="price-badge">Sale</div>
+                            </div>
+                        </div>
+
+                        <!-- Floating image caption -->
+                        <div class="floating-image-caption">
+                            <p>"The essence of modern Egyptian fashion"</p>
+                            <div class="caption-author">- Featured in Vogue Egypt</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Floating scroll indicator -->
+                <div class="floating-scroll-indicator">
+                    <div class="scroll-text">Scroll to Explore</div>
+                    <div class="scroll-dots">
+                        <div class="scroll-dot active"></div>
+                        <div class="scroll-dot"></div>
+                        <div class="scroll-dot"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Collections Section -->
+        <section id="collections" class="bg-light" aria-labelledby="collections-title">
+            <h3 id="collections-title" class="section-title">Collections</h3>
+            <div class="grid-3col">
+                <article class="card-collection" tabindex="0" role="button" data-collection="minimalist">
+                    <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80"
+                        alt="Minimalist collection preview" loading="lazy" />
+                    <div class="content">
+                        <h4>Hoodies</h4>
+                        <p>Clean lines & neutral tones</p>
+                    </div>
+                </article>
+
+                <article class="card-collection" tabindex="0" role="button" data-collection="streetwear">
+                    <img src="a1111.png" alt="Streetwear collection preview" loading="lazy" />
+                    <div class="content">
+                        <h4>Streetwear</h4>
+                        <p>Bold prints & urban style</p>
+                    </div>
+                </article>
+
+                <article class="card-collection" tabindex="0" role="button" data-collection="Pants">
+                    <img src="abde.jpg" alt="Pants collection preview" loading="lazy" />
+                    <div class="content">
+                        <h4>Pants</h4>
+                        <p>Bold prints & urban style</p>
+                    </div>
+                </article>
+
+                <article class="card-collection" tabindex="0" role="button" data-collection="new arrivals">
+                    <img src="sport.jpg" alt="New arrivals collection preview" loading="lazy" />
+                    <div class="content">
+                        <h4>Sports Wear</h4>
+                        <p>Latest 𝐹𝒶𝓇𝒶`𝟥 designs</p>
+                    </div>
+                </article>
+
+                <article class="card-collection" tabindex="0" role="button" data-collection="oversized fit">
+                    <img src="oversize3.jpg" alt="Oversized fit collection preview" loading="lazy" />
+                    <div class="content">
+                        <h4>Oversized Fit</h4>
+                        <p>Loose, trending silhouettes</p>
+                    </div>
+                </article>
+
+                <article class="card-collection" tabindex="0" role="button" data-collection="summer drop">
+                    <img src="shirt.jpg" alt="Summer drop collection preview" loading="lazy" />
+                    <div class="content">
+                        <h4>Shirts</h4>
+                        <p>Striped & Smooth</p>
+                    </div>
+                </article>
+
+                <article class="card-collection" tabindex="0" role="button" data-collection="everyday basics">
+                    <img src="coat.jpg" alt="Everyday basics collection preview" loading="lazy" />
+                    <div class="content">
+                        <h4>Coat</h4>
+                        <p>MAXI FUR COAT</p>
+                    </div>
+                </article>
+
+                <article class="card-collection" tabindex="0" role="button" data-collection="Hats">
+                    <img src="hats.jpg" alt="Pants collection preview" loading="lazy" />
+                    <div class="content">
+                        <h4>HATS</h4>
+                        <p>Bold prints & urban style</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Collection Products Gallery Section -->
+        <section id="collection-gallery" class="bg-light" style="display: none;" aria-labelledby="gallery-title">
+            <button class="back-to-collections">← Back to Collections</button>
+            <h3 id="gallery-title" class="section-title" style="text-align: center;"></h3>
+            <div class="grid-4col" id="gallery-products">
+                <!-- Gallery products will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- Product Details Modal -->
+        <div id="product-modal" class="checkout-modal" style="display: none;">
+            <div class="checkout-content" style="max-width: 500px;">
+                <h2 id="modal-product-name">Product Name</h2>
+                <img id="modal-product-image" src="" alt=""
+                    style="width: 100%; height: 300px; object-fit: cover; border-radius: 8px; margin: 15px 0;">
+                <div id="modal-product-details"></div>
+                <div style="margin-top: 20px; display: flex; gap: 10px;">
+                    <button id="add-to-cart-from-modal" class="btn-primary">Add to Cart</button>
+                    <button id="close-product-modal" style="background: #ccc; color: #000;">Close</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Products Section -->
+        <section id="products" aria-labelledby="products-title">
+            <h3 id="products-title" class="section-title">Best Sales</h3>
+            <div class="grid-4col">
+                <article class="card-product" tabindex="0" role="button" data-name="𝐹𝒶𝓇𝒶`𝟥 Classic Tee"
+                    data-price="55" data-img="main.png">
+                    <img src="main.png" alt="𝐹𝒶𝓇𝒶`𝟥 Classic Tee black and white options" loading="lazy" />
+                    <div class="content">
+                        <h4>𝐹𝒶𝓇𝒶`𝟥 Classic T-Shirt</h4>
+                        <p class="description">Soft cotton, black or white</p>
+                        <p class="price">$55</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+
+                <article class="card-product" tabindex="0" role="button" data-name="𝐹𝒶𝓇𝒶`𝟥 Original Pant"
+                    data-price="65" data-img="main2.png">
+                    <img src="main2.png" alt="𝐹𝒶𝓇𝒶`𝟥 Original Pant with bold logo" loading="lazy" />
+                    <div class="content">
+                        <h4>𝐹𝒶𝓇𝒶`𝟥 Original Pant</h4>
+                        <p class="description">Bold logo, streetwear fit</p>
+                        <p class="price">$65</p>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- XML Products Section -->
+        <section id="xml-products-section" style="display: none;" class="bg-light" aria-labelledby="xml-products-title">
+            <h3 id="xml-products-title" class="section-title">XML Featured Products</h3>
+            <div class="grid-4col" id="xml-products-container">
+                <!-- XML products will be dynamically inserted here -->
+            </div>
+        </section>
+
+        <!-- JSON Products Section -->
+        <section id="json-products-section" style="display: none;" class="bg-light"
+            aria-labelledby="json-products-title">
+            <h3 id="json-products-title" class="section-title">JSON API Products</h3>
+            <div class="grid-4col" id="json-products-container">
+                <!-- JSON products will be dynamically inserted here -->
+            </div>
+        </section>
+        <!-- About Section -->
+        <section id="about" class="bg-light" aria-labelledby="about-title">
+            <h3 id="about-title" class="section-title">About 𝐹𝒶𝓇𝒶`𝟥</h3>
+            <p>
+                𝐹𝒶𝓇𝒶`𝟥 represents the fusion of minimalist fashion and bold street culture from Egypt. We create
+                timeless
+                pieces for confident individuals who value simplicity with attitude.
+            </p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" aria-labelledby="contact-title">
+            <h3 id="contact-title" class="section-title">Contact Us</h3>
+            <form id="contactForm" aria-label="Contact form">
+                <input type="text" name="name" placeholder="Your Name" required aria-required="true" />
+                <div id="contactNameError" class="error-message" style="display: none; margin-bottom: 10px;"></div>
+
+                <input type="email" name="email" placeholder="Your Email" required aria-required="true" />
+                <div id="contactEmailError" class="error-message" style="display: none; margin-bottom: 10px;"></div>
+
+                <textarea name="message" rows="5" placeholder="Your Message" required aria-required="true"></textarea>
+                <div id="contactMessageError" class="error-message" style="display: none; margin-bottom: 10px;"></div>
+
+                <div id="contactMessage" class="info-message" style="display: none;"></div>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Cart Sidebar -->
+    <div id="cartSidebar" class="cart-sidebar">
+        <h2>Your Cart</h2>
+        <div id="cartItems"></div>
+        <div class="cart-footer">
+            <p class="total"><span id="cartTotal"></span></p>
+            <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div id="checkoutModal" class="checkout-modal">
+        <div class="checkout-content">
+            <h2>Checkout</h2>
+
+            <!-- Order Summary -->
+            <div class="order-summary">
+                <h3>Order Summary</h3>
+                <div class="order-summary-item">
+                    <span>Items (<span id="itemCount">0</span>)</span>
+                    <span>$<span id="subtotal">0.00</span></span>
+                </div>
+                <div class="order-summary-item">
+                    <span>Shipping</span>
+                    <span>Free</span>
+                </div>
+                <div class="order-summary-item">
+                    <span>Total</span>
+                    <span>$<span id="orderTotal">0.00</span></span>
+                </div>
+            </div>
+
+            <h3>Select Payment Method</h3>
+
+            <label>
+                <input type="radio" name="payment" value="visa" id="visa" checked>
+                <span>💳 Visa / Mastercard</span>
+            </label>
+
+            <label>
+                <input type="radio" name="payment" value="paypal" id="paypal">
+                <span>📱 PayPal</span>
+            </label>
+
+            <label>
+                <input type="radio" name="payment" value="cod" id="cod">
+                <span>💵 Cash On Delivery</span>
+            </label>
+
+            <!-- Loading State -->
+            <div class="checkout-loading" id="checkoutLoading">
+                <div class="spinner"></div>
+                <p>Processing your order...</p>
+            </div>
+
+            <!-- Success State -->
+            <div class="checkout-success" id="checkoutSuccess">
+                <div style="font-size: 3rem; color: var(--success); margin-bottom: 1rem;">✓</div>
+                <h3>Order Confirmed!</h3>
+                <p>Your order has been successfully placed.</p>
+            </div>
+
+            <!-- Action Buttons -->
+            <div id="checkoutActions">
+                <button id="confirmPaymentBtn">
+                    <span>🛒</span> Confirm Purchase
+                </button>
+                <button id="closeCheckout">
+                    <span>✕</span> Cancel
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Toggle Button -->
+    <button id="cartToggle" class="cart-toggle">🛒</button>
+
+    <!-- Footer -->
+    <footer>
+        © 2024 𝐹𝒶𝓇𝒶`𝟥. All rights reserved.
+    </footer>
+</body>
+
+</html>
